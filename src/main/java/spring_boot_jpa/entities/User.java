@@ -41,8 +41,11 @@ public class User {
 	public String getRole() {
 		return role;
 	}
-	
-	
 
-	
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", role=" + role +"]";
+	}
+		
 }
