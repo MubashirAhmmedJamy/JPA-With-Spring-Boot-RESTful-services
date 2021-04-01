@@ -10,6 +10,7 @@ import spring_boot_jpa.entities.User;
 
 @Repository
 @Transactional
+
 public class UserDAOService {
 
 	@PersistenceContext
@@ -17,7 +18,7 @@ public class UserDAOService {
 
 	public long insert(User user) {
 		entityManager.persist(user);
+		
 		return user.getId();
 	}
-
 }
